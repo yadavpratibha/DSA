@@ -21,5 +21,5 @@ public class Person_client {
 		Person p2 = new Person("Karan",25);
 		p2.fun(); 
 	}
-
+	
 }
