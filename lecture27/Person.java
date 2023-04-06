@@ -20,6 +20,5 @@ public class Person {
 		String name="Panchi";
 		int Aadhar_no=901928;
 		System.out.println(this.name+" "+this.age+" "+ Aadhar_no);
-		
 	}
 }
