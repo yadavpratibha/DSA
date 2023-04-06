@@ -18,4 +18,5 @@ public class Student {
 	static {
 		System.out.println("Welcome!!");
 	}
+	
 }
