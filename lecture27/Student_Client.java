@@ -11,6 +11,7 @@ public class Student_Client {
 		System.out.println(s.name);
 		System.out.println(s.age);
 		s.Intro_yourself();
+		
 		System.out.println();
 		
 		Student s1 = new Student();
