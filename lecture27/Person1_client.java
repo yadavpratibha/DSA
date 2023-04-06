@@ -13,5 +13,4 @@ public class Person1_client {
 		p1.fun();
 		
 	}
-
 }
