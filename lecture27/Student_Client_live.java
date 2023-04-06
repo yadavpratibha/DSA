@@ -4,6 +4,7 @@ public class Student_Client_live {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Student s2 = new Student();
 		Student s3 = new Student();
 		s2.name = "kunal";
