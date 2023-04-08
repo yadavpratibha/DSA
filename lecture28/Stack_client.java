@@ -19,7 +19,7 @@ public class Stack_client {
 		st.push(9);
 		System.out.println(st.pop());
 		st.Display();
-
+		
 	}
 
 }
