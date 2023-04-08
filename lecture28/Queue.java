@@ -31,6 +31,7 @@ public class Queue {
 		arr[idx]=item;
 		size++;
 	}
+
 	
 	public int Dequeue() throws Exception{  //Deletion of item
 		if(isEmpty()) {
