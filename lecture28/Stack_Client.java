@@ -1,6 +1,6 @@
 package lecture28;
 
-public class Stack_client {
+public class Stack_Client {
 
 	public static void main(String[] args)throws Exception {
 		// TODO Auto-generated method stub
