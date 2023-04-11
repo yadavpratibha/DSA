@@ -6,6 +6,7 @@ public class Divisible_by_6 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
+		
 		if (n%6==0) {
 			System.out.println("Divisible by 6");
 		}
