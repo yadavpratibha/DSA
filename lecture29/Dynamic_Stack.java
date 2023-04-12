@@ -11,6 +11,7 @@ public class Dynamic_Stack extends Stack {
 			}
 			arr = narr;
 		}
+		
 //		tos++;
 //		arr[tos] = item;
 		super.push(item); // to call method of parent class
