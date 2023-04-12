@@ -14,6 +14,7 @@ public class Dynamic_Stack_Client {
 		ds.push(10);
 		ds.push(10);
 		ds.Display();
+		
 	}
 
 }
