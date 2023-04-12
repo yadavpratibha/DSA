@@ -7,7 +7,6 @@ public class P {
 	public void fun() {
 		System.out.println("Fun in P");
 	}
-	
 	public void fun1() {
 		System.out.println("Fun1 in P");
 	}
