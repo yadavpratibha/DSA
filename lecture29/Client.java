@@ -41,6 +41,7 @@ public class Client {
 		obj.fun1();
 		obj.fun2();
 		
+		
 	}
 
 }
