@@ -30,7 +30,6 @@ public class Stack {
 		tos++;
 		arr[tos]=item;
 	}
-	
 	public int size() {  //size of stack
 		return tos+1;
 	}
