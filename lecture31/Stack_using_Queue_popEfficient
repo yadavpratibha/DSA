@@ -1,0 +1,37 @@
+package lecture31;
+import lecture29.Dynamic_Queue;
+public class Stack_using_Queue_popEfficient {
+	Dynamic_Queue q;
+	
+	public Stack_using_Queue_popEfficient() {  //Constructor
+		q=new Dynamic_Queue();
+	}
+	
+	public boolean isEmpty() {  //if Stack is Empty
+		return q.size()==0;
+	}
+	
+	public int size() {  //size of Stack
+		return q.size();
+	}
+	
+	public void push(int item) throws Exception{  //
+		Dynamic_Queue temp=new Dynamic_Queue();
+		while(!q.isEmpty()) {
+			temp.Enqueue(q.Dequeue());
+		}
+		q.Enqueue(item);
+		while(!temp.isEmpty()) {
+			q.Enqueue(temp.Dequeue());
+		}
+	}
+	
+	public int pop() throws Exception{
+		return q.Dequeue();
+	}
+	
+	public int peek() throws Exception{
+		return q.GetFront();
+	}
+	
+}
