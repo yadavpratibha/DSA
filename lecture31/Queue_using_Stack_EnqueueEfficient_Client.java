@@ -13,5 +13,4 @@ public class Queue_using_Stack_EnqueueEfficient_Client {
 		System.out.println(q.Dequeue());
 		System.out.println(q.getFront());
 	}
-
 }
