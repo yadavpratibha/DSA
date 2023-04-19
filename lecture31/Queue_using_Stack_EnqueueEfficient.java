@@ -43,6 +43,5 @@ public class Queue_using_Stack_EnqueueEfficient {
 			ds.push(temp.pop());
 		}
 		return val;
-	}
-	
+	}	
 }
