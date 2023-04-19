@@ -13,7 +13,6 @@ public class Stack_using_Queue_popEfficient_Client {
 		System.out.println(st.peek());
 		System.out.println(st.pop());
 		System.out.println(st.peek());
-
 	}
 
 }
