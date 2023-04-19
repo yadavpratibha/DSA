@@ -4,7 +4,6 @@ import lecture29.Dynamic_Queue;;
 
 public class Stack_using_Queue_pushEfficient {
 	private Dynamic_Queue q;
-
 	public Stack_using_Queue_pushEfficient() {  //constructor
 		q = new Dynamic_Queue();
 	}
