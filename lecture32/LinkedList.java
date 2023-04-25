@@ -11,7 +11,6 @@ public class LinkedList {
 	private Node tail;
 
 	public void AddFirst(int item) {
-
 		Node nn = new Node();
 		nn.val = item;
 		if (size == 0) {
@@ -23,7 +22,6 @@ public class LinkedList {
 			head = nn;
 			size++;
 		}
-
 	}
 
 	public void AddLast(int item) {
@@ -35,9 +33,16 @@ public class LinkedList {
 			tail.next = nn;
 			tail = nn;
 			size++;
-
 		}
+	}
 
+	public void Display() {
+		Node temp = head;
+		while (temp != null) {
+			System.out.print(temp.val + "->");
+			temp = temp.next;
+		}
+		System.out.println("x");
 	}
 
 	public void AddAtIndex(int item, int k) throws Exception {
@@ -52,70 +57,66 @@ public class LinkedList {
 			nn.next = k_1th.next;
 			k_1th.next = nn;
 			size++;
-
 		}
-
 	}
 
-	private Node GetNode(int k) throws Exception {
-		if (k < 0 || k >= size) {
-			throw new Exception("Bklol k sahi dede");
+	public int GetFirst() throws Exception {
+		if (size == 0) {
+			throw new Exception("Linked List is empty.");
+		}
+		return head.val;
+	}
+
+	public int GetLast() throws Exception {
+		if (size == 0) {
+			GetFirst();
+		}
+		return tail.val;
+	}
+
+	public int GetAtIndex(int k) throws Exception {
+		return GetNode(k).val;
+	}
+
+	public Node GetNode(int k) throws Exception {
+		if (k < 0 || k > size) {
+			throw new Exception("k is not in range.");
 		}
 		Node temp = head;
-		for (int i = 0; i < k; i++) {
+		for (int i = 1; i <= k; i++) {
 			temp = temp.next;
 		}
 		return temp;
 	}
 
-	public void Display() {
-		Node temp = head;
-		while (temp != null) {
-			System.out.print(temp.val + "->");
-			temp = temp.next;
-		}
-		System.out.println(".");
-	}
-
-	public int GetFirst() {
-		return head.val;
-	}
-
-	public int GetLast() {
-		return tail.val;
-	}
-
-public int GetAtIndex(int k) throws Exception {
-		return GetNode(k).val;
-	}
-
 	public int RemoveFirst() {
-		Node rv = head;
+		Node temp = head;
 		if (size == 1) {
 			head = null;
 			tail = null;
 			size--;
 		} else {
 			head = head.next;
+			temp.next = null;
 			size--;
-			rv.next = null;
-
 		}
-		return rv.val;
+		return temp.val;
 	}
 
 	public int RemoveLast() throws Exception {
-
 		if (size == 1) {
-			return RemoveFirst();
-		} else {
-			Node rv = GetNode(size - 2);
-			int val = tail.val;
-
-			rv.next = null;
-			tail = rv;
+			Node temp = tail;
+			head = null;
+			tail = null;
 			size--;
-			return val;
+			return temp.val;
+		} else {
+			int value = tail.val;
+			Node temp = GetNode(size - 2);
+			temp.next = null;
+			tail = temp;
+			size--;
+			return value;
 		}
 	}
 
@@ -131,8 +132,6 @@ public int GetAtIndex(int k) throws Exception {
 			kth.next = null;
 			size--;
 			return kth.val;
-
 		}
 	}
-
 }
