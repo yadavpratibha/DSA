@@ -9,7 +9,6 @@ public class Pattern_question_01 {
 		int row = 1;
 		int star = n;
 		while (row <= n) {
-
 			// print star
 			int i = 1;
 			while (i <= star) {
@@ -19,7 +18,6 @@ public class Pattern_question_01 {
 			row++;
 			System.out.println();
 		}
-
 	}
 
 }
