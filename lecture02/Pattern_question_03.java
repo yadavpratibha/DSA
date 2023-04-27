@@ -18,6 +18,7 @@ public class Pattern_question_03 {
 				System.out.print("* ");
 				i++;
 			}
+			
 			row++;
 			star--;
 			System.out.println();
