@@ -22,5 +22,4 @@ public class Pattern_question_02 {
 			System.out.println();
 		}
 	}
-
 }
