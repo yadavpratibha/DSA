@@ -12,6 +12,7 @@ public class Pattern_question_04 {
 		int space = n - 1;
 		int star = 1;
 		while (row <= n) {
+			
 			// print space
 			int i = 1;
 			while (i <= space) {
