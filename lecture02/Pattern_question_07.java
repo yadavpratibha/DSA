@@ -30,7 +30,6 @@ public class Pattern_question_07 {
 					j++;
 				}
 				System.out.print("* ");
-
 			}
 			row++;
 			System.out.println();
