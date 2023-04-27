@@ -10,7 +10,6 @@ public class Pattern_question_08 {
 		int lspace = 0;
 		int mspace = n - 2;
 		while (row <= n) {
-
 			// print left space
 			int i = 1;
 			while (i <= lspace) {
