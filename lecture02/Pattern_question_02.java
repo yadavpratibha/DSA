@@ -16,6 +16,7 @@ public class Pattern_question_02 {
 				System.out.print("* ");
 				i++;
 			}
+			
 			//preparation of next
 			star++;
 			row++;
