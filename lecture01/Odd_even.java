@@ -13,6 +13,7 @@ public class Odd_even {
 		else {
 			System.out.println("Odd");
 		}
+		
 	}
 
 }
