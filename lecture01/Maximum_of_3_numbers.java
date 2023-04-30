@@ -17,6 +17,7 @@ public class Maximum_of_3_numbers {
 		} else {
 			System.out.println(c + " is greatest.");
 		}
+		
 	}
 
 }
