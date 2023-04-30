@@ -15,6 +15,8 @@ public class Number_greater_than_25 {
 		else {
 			System.out.println(n+" is less than 25");
 		}
+		
 	}
 
 }
+		
