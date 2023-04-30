@@ -9,5 +9,4 @@ public class Hello_world {
 		System.out.println("Welcome to Coding Blocks.");
 		System.out.println("Hello Pratibha");
 	}
-
 }
