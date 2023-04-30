@@ -19,6 +19,7 @@ public class Grade_card {
 		} else {
 			System.out.println("Fail");
 		}
+		
 	}
 
 }
