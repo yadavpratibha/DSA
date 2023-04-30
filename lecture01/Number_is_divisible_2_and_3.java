@@ -12,6 +12,7 @@ public class Number_is_divisible_2_and_3 {
 		else {
 			System.out.println("not divisible by 6");
 		}
+		
 	}
 
 }
