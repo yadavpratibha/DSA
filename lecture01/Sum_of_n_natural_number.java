@@ -13,6 +13,7 @@ public class Sum_of_n_natural_number {
 		while (i <= n) {
 			sum = sum + i;
 			i++;
+			
 		}
 		System.out.println(sum);
 	}
