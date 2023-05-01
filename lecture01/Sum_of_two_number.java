@@ -9,6 +9,7 @@ public class Sum_of_two_number {
 		int c = a+b;
 		System.out.println(c);
 		System.out.println("The sum of a and b is "+c);
+		
 	}
 
 }
