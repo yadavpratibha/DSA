@@ -13,6 +13,7 @@ public class Table_of_7 {
 			int p = 7 * i;
 			System.out.println(p);
 			i++;
+			
 		}
 	}
 
