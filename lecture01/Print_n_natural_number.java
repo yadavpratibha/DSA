@@ -12,6 +12,7 @@ public class Print_n_natural_number {
 		while (i <= n) {
 			System.out.println(i);
 			i++;
+			
 		}
 	}
 
