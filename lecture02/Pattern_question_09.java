@@ -31,6 +31,7 @@ public class Pattern_question_09 {
 			star+=2;
 			space--;
 			System.out.println();
+			
 		}
 	}
 
