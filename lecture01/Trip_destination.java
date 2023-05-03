@@ -17,6 +17,7 @@ public class Trip_destination {
 				System.out.println("Goa");
 			}
 		}
+		
 	}
 
 }
