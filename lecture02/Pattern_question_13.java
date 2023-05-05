@@ -30,6 +30,7 @@ public class Pattern_question_13 {
 			{
 				star--;
 			}
+			
 		}
 	}
 
