@@ -11,6 +11,7 @@ public class Pattern_question_15 {
 		int row = 1;
 		int star = n;
 		int space = 0;
+		
 		while (row <= 2 * n - 1) {
 			// print space
 			int i = 1;
