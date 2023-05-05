@@ -26,6 +26,7 @@ public class Pattern_question_14 {
 			
 			//next row
 			row++;
+			
 			//space
 			if(row<=n) {
 				space--;
