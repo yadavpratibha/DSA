@@ -1,0 +1,46 @@
+package lecture30;
+import java.util.Scanner;
+import java.util.Stack;
+public class Assignment_Dequeue_Efficient_Queue_Using_Stack {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n= sc.nextInt();
+		QueueUsingStack_DequeueEfficient q=new QueueUsingStack_DequeueEfficient();
+		for(int i=0;i<n;i++) {
+			QueueUsingStack_DequeueEfficient.Enqueue(i);
+		}
+		for(int i=0;i<n;i++) {
+			System.out.print(QueueUsingStack_DequeueEfficient.Dequeue()+" ");
+		}
+	}
+	
+	public static class QueueUsingStack_DequeueEfficient{
+		static Stack<Integer>st=new Stack<>();
+		
+		public static boolean isEmpty() {
+			return st.isEmpty();
+		}
+		
+		public static int size() {
+			return st.size();
+		}
+		
+		public static int Dequeue() {
+			return st.pop();
+		}
+		
+		public static void Enqueue(int item) {
+			Stack<Integer>temp=new Stack<>();
+			while(!st.isEmpty()) {
+				temp.push(st.pop());
+			}
+			st.push(item);
+			while(!temp.isEmpty()) {
+				st.push(temp.pop());
+			}
+		}
+	}
+
+}
