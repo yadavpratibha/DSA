@@ -1,0 +1,21 @@
+package lecture08;
+
+public class Array_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []arr=new int[5];
+		System.out.println(arr); //address of array
+		System.out.println(arr.length); //length of array
+		int[] other = arr;
+		//get value
+//		System.out.println(arr[0]);
+//		System.out.println(arr[1]);
+	
+		arr[3]=-9;
+		for(int i=0; i<arr.length; i++)
+			System.out.print(arr[i]+" ");
+		//default value of elements is 0
+	}
+
+}
