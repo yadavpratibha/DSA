@@ -14,6 +14,7 @@ public class Leetcode_189_Rotate_array {
 		}
 		int k = sc.nextInt();
 		rotate(arr, k);
+		
 		for(int i=0;i<arr.length;i++) {
 			System.out.print(arr[i]+" ");
 		}
