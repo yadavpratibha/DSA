@@ -10,6 +10,7 @@ public class Leetcode_189_Reversal_algorithm {
 		for(int i=0;i<n;i++) {
 			arr[i]=sc.nextInt();
 		}
+		
 		int k=sc.nextInt();
 		rotate(arr,k);
 		for(int i=0;i<n;i++) {
