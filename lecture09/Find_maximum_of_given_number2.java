@@ -6,6 +6,7 @@ public class Find_maximum_of_given_number2 {
 		// TODO Auto-generated method stub
 		int[] arr = {2,9,7,11,8};
 		System.out.println(Max(arr,5));
+		
 	}
 	
 	public static int Max(int[] arr, int j) {
