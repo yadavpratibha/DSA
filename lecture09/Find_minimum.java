@@ -12,6 +12,7 @@ public class Find_minimum {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
+		
 		int y = minimum(arr);
 		System.out.println(y);
 	}
