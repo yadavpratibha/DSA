@@ -10,6 +10,7 @@ public class Array_Swap_two_number_2 {
 		for(int i=0;i<arr.length;i++) {
 			arr[i] = sc.nextInt();
 		}
+		
 		swap(arr);
 		System.out.print(arr[0]+" "+arr[1]);
 	}
