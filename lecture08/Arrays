@@ -8,6 +8,7 @@ public class Array_01 {
 		System.out.println(arr); //address of array
 		System.out.println(arr.length); //length of array
 		int[] other = arr;
+		
 		//get value
 //		System.out.println(arr[0]);
 //		System.out.println(arr[1]);
