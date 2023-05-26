@@ -12,6 +12,7 @@ public class Array_input {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
+		
 		Display(arr);
 	}
 
