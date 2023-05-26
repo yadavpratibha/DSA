@@ -10,6 +10,7 @@ public class Array_swap_two_number_3 {
 		for(int i=0;i<arr.length;i++) {
 			arr[i] = sc.nextInt();
 		}
+		
 		int[] other = {100,200,300,400,500};
 		swap(arr,other);
 		for(int i=0;i<arr.length;i++) {
