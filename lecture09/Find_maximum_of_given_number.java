@@ -13,6 +13,7 @@ public class Find_maximum_of_given_number {
 			arr[i] = sc.nextInt();
 			
 		}
+		
 		System.out.println(Max(arr));
 	}
 
