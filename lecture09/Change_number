@@ -13,6 +13,7 @@ public class Change_number {
 	}
 	
 	public static void Reverse(int[] arr) {
+	
 			for(int i =2,j=5; i<j;i++,j--) {
 				int temp=arr[i];
 				arr[i] = arr[j];
