@@ -12,6 +12,7 @@ public class Array_swap_two_numbers {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
+		
 		int[] other = arr;
 		swap(arr[0], arr[1]); //sending values saved in arr
 		System.out.println(arr[0]+" "+arr[1]); //print value saved in address array at index 0,1
