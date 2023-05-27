@@ -1,0 +1,35 @@
+package lecture10;
+
+import java.util.*;
+
+public class Bubble_sort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		for (int i = 0; i < arr.length; i++) { // input elements
+			arr[i] = sc.nextInt();
+		}
+		Sort(arr);
+		for (int i = 0; i < arr.length; i++) { // print sorted array
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	public static void Sort(int[] brr) {
+		// array with n elements needs to be arranged n-1 times
+		// as if n-1 elements are sorted then the nth element gets automatically sorted
+		for (int turn = 1; turn < brr.length; turn++) {
+			// arrange till (brr.length-turn) as rest of the elements are already sorted
+			for (int k = 0; k < brr.length - turn; k++) {
+				if (brr[k] > brr[k + 1]) { // swapping
+					int temp = brr[k];
+					brr[k] = brr[k + 1];
+					brr[k + 1] = temp;
+				}
+			}
+		}
+	}
+}
