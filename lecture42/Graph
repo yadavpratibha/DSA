@@ -222,5 +222,41 @@ public class Graph {
 			}
 		}
 	}
+	
+	public boolean isConnected() {
+		Queue<Integer>q=new LinkedList<>();
+		HashSet<Integer>visited=new HashSet<>();
+		int count=0;
+		for(int src:map.keySet()) {
+			if(visited.contains(src)) {
+				continue;
+			}
+			count++;
+			q.add(src);
+			
+			while(!q.isEmpty()) {
+				//1 Remove
+				int rv=q.remove();
+				
+				//2 Ignore if already visited
+				if(visited.contains(rv)) {
+					continue;
+				}
+				
+				//3 Mark visited
+				visited.add(rv);
+				
+				//4 Self-work
+				
+				//5 Add nbrs if unvisited
+				for(int nbrs:map.keySet()) {
+					if(!visited.contains(nbrs)) {
+						q.add(nbrs);
+					}
+				}
+			}
+		}
+		return count==1;
+	}
 
 }
