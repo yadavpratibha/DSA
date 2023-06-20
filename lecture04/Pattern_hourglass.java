@@ -11,6 +11,7 @@ public class Pattern_hourglass {
 		int star = 2 * n + 1;
 		int row = 1;
 		int val = n;
+		
 		while (row <= 2 * n + 1) {
 			int i = 1;
 			while (i <= space) {
