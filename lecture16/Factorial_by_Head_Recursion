@@ -1,0 +1,25 @@
+package lecture16;
+
+import java.util.*;
+
+public class Factorial_by_Head_Recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println(Factorial(n));
+		
+	}
+
+	public static int Factorial(int n) {
+		// Answer is getting formed when we go downward
+		// Head Recursion
+		if (n == 1) { // base case
+			return 1;
+		}
+		int fn = Factorial(n - 1); // recursion for (n-1)
+		return n * fn;
+	}
+
+}
