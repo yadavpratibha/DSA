@@ -1,0 +1,31 @@
+package lecture17;
+
+import java.util.Scanner;
+
+public class Assignment_All_Indices_Problem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = sc.nextInt();
+		}
+		int m=sc.nextInt();  //item
+		Indices(arr, 0,m);
+	}
+
+	public static void Indices(int[] arr, int idx,int m) {
+		if(idx==arr.length) {
+			return;
+		}
+		
+		if(arr[idx]==m) {
+			System.out.print(idx+" ");
+		}
+		Indices(arr,idx+1,m);
+		
+	}
+
+}
