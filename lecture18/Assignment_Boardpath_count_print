@@ -1,0 +1,31 @@
+package lecture18;
+
+import java.util.Scanner;
+
+public class Assignment_Boardpath_count_print {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt(); // board length
+		int m = sc.nextInt(); // dice sides
+		int curr = 0;
+		System.out.println("\n" + BoardPath(curr, n, m, ""));
+	}
+
+	public static int BoardPath(int curr, int n, int m, String ans) {
+		if (curr == n) {
+			System.out.print(ans + " ");
+			return 1;
+		}
+		if (curr > n) {
+			return 0;
+		}
+		int count = 0;
+		for (int dice = 1; dice <= m; dice++) {
+			count = count + BoardPath(curr + dice, n, m, ans + dice);
+		}
+		return count;
+	}
+
+}
