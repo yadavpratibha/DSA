@@ -1,0 +1,29 @@
+package lecture19;
+
+import java.util.Scanner;
+
+public class Assignment_Lexicographical_Order {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		Print_Lexo_Order(0, n);
+
+	}
+
+	public static void Print_Lexo_Order(int curr, int end) {
+		if (curr > end) {
+			return;
+		}
+
+		System.out.print(curr + " ");
+		int i = 0;
+		if (curr == 0) {
+			i = 1;
+		}
+		for (; i <= 9; i++) {
+			Print_Lexo_Order(curr * 10 + i, end);
+		}
+	}
+}
