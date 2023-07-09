@@ -4,20 +4,30 @@ public class Leetcode131_Palindrome_Partitioning {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-String str="NitiN";
-Partioning(str, "");
+		String str = "NitiN";
+		Partioning(str, "");
 	}
-	
-	public static void Partioning(String ques,String ans) {
-		if(ques.length()==0) {
-			System.out.println(ans+" ");
+
+	public static void Partioning(String ques, String ans) {
+		if (ques.length() == 0) {
+			System.out.println(ans + " ");
 			return;
 		}
-		for(int i=1;i<ques.length();i++) {
-
-			Partioning(ques, ans);
-			Partioning(ques.substring(i), ans+ques.substring(0, i));
+		for (int i = 1; i <= ques.length(); i++) {
+			String s = ques.substring(0, i);
+			if (isPalindrome(s)) {
+				Partioning(ques.substring(i), ans + s + "|");
+			}
 		}
+	}
+
+	public static boolean isPalindrome(String s) {
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }
