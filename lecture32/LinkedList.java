@@ -3,7 +3,7 @@ public class LinkedList{
         int val;
         Node next;
         
-        public Node(int val){
+        public Node(int val){  //Constructor
             this.val=val;
             this.next=null;
         }
@@ -140,3 +140,4 @@ public class LinkedList{
         System.out.println("null");
     }
 }
+
